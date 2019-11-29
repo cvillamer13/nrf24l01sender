@@ -7,11 +7,12 @@
 #include <RF24.h>
 
 /* Set these to your desired credentials. */
-const char *ssid = "TP-LINK_717104";  //ENTER YOUR WIFI SETTINGS
-const char *password = ".5236987410!";
+//ENTER YOUR WIFI SETTINGS
+const char *ssid = "SSID";  // Enter SSID of your Wifi
+const char *password = "PASSWORD"; // Enter Password of your Wifi
 
 //Web/Server address to read/write from 
-const char *host = "http://cvillamer13.000webhostapp.com/";   //website or IP address of server
+const char *host = "localhost or Website";   //website or IP address of server
 RF24 radio(D3, D4); // CE, CSN      // Define instance of RF24 object called 'radio' and define pins used
 const byte address[6] = "00001";  // Define address/pipe to use. This can be any 5 alphnumeric letters/numbers
 
